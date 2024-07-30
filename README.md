@@ -8,6 +8,7 @@ Requirements
 ```
 Build and install OpenCV 4.7.0
 
+```
 wget -O opencv.zip https://github.com/opencv/opencv/archive/4.7.0.zip
 wget -O opencv_contrib.zip https://github.com/opencv/opencv_contrib/archive/4.7.0.zip
 unzip opencv.zip
@@ -16,7 +17,7 @@ mkdir -p opencv_build && cd opencv_build
 cmake -DOPENCV_EXTRA_MODULES_PATH=../opencv_contrib-4.7.0/modules ../opencv-4.7.0
 cmake --build .
 cmake --install .
-
+```
 Run the build script
 ```
 cd <path to libmediapipe>
