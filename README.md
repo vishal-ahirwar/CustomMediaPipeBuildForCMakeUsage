@@ -23,3 +23,17 @@ Run the build script
 cd <path to libmediapipe>
 ./build-x86_64-linux.sh --config release --opencv_dir /usr/local
 ```
+
+Running the Example
+Linux & MacOS
+Requirements
+
+    CMake
+```
+cd <path to libmediapipe>/example
+mkdir build && cd build
+cmake -DMediaPipe_DIR=<libmediapipe build dir> -DCMAKE_BUILD_TYPE=Release ..
+cmake --build .
+chmod +x ./example
+./example <libmediapipe data dir>
+```
